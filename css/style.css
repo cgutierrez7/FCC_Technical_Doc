@@ -2,10 +2,9 @@ body {
   background: white;
 }
 
-ul {
+.nav-list {
   padding: 0px;
   margin: 0px;
-  margin-block-start: ;
   list-style: none;
 }
 .main-container {
@@ -32,7 +31,7 @@ ul {
 
 .right-container {
   width: 70%;
-  overflow: auto;
+  /*overflow: auto;*/
   height: 100%;
   box-sizing: border-box;
 }
@@ -48,4 +47,73 @@ ul {
 a {
   color: black;
   text-decoration: none;
+}
+
+.flex-image {
+  width: 100%;
+  height: auto;
+}
+
+.components {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.starting-cards {
+  width: 50%;
+  height: auto;
+}
+
+.supply-cards {
+  width: 50%;
+  height: auto;
+}
+
+.coins {
+  width: 33%;
+  height: auto;
+}
+
+.dice {
+  width: 33%;
+  height: auto;
+}
+
+.game-rules {
+  width: 33%;
+  height: auto;
+}
+
+.card-explanation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.establishments {
+  width: 50%;
+  height: auto;
+}
+
+.landmarks {
+  width: 50%;
+  height: auto;
+}
+
+.game-setup {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.city-hall {
+  width: 15%
+}
+.special-note {
+  width: 85%
+}
+
+.replenish-line {
+  overflow: auto;
 }
