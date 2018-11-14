@@ -1,5 +1,74 @@
+/*Background Purple #373aaa*/
+/*Section Purple #b0b2fc*/
+/*Section Header Purple #413c83;*/
+/*In future, fix float-images in @mediaquery*/
+
 body {
-  background: white;
+  background: #5c5e96;    
+  background-image: url(https://i.imgur.com/EA5cp9E.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+
+section {
+  background: #b0b2fc;  
+  padding: 15px;
+  border-radius: 30px;
+}
+
+h1 {
+  font-family: verdana, sans-serif;
+  color: #413c83;
+}
+
+h2 {
+  font-family: 'Luckiest Guy', cursive;
+  color: #413c83;
+  /*text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;*/ 
+}
+
+h3 {
+  font-family: verdana, sans-serif;
+  color: #413c83;
+}
+
+li {
+  padding: 10px;
+}
+
+code {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.machi {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000; 
+  margin-bottom: 0px;
+  margin-left: 25px;
+}
+
+.bright {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 22px;
+  color: palegoldenrod;
+  text-shadow: 2px 2px 8px rgba(238, 232, 170, 0.884);
+  margin-top: 0px;
+  margin-left: 25px;
+  padding-top: 0px;
 }
 
 .nav-list {
@@ -11,22 +80,24 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 50px;
 }
 .left-container {
   display: flex;
   flex-direction: column;
-  background: white;
+  /*background: #373aaa;*/
   width: 30%;
 }
 
 .contents {
   width: 28%;
   height: 100%;
-  background: white;
-  border-right: 1px solid black;
+  /*background: white;*/
+  /*border-right: 5px solid black;*/
   position: fixed;
   overflow: scroll;
   top: 0;
+  left: 0;
 }
 
 .right-container {
@@ -37,76 +108,80 @@ body {
 }
 
 .links {
-  background: white;
-  font-size: 22px;
-  padding: 20px;
-  margin: 10px;
-  border-bottom: 1px solid black;
+  background: #b0b2fc;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px;
+  /*border-bottom: 1px solid black;*/
+  border-radius: 15px;
 }
 
-a {
+nav a {
+  display: block;
   color: black;
   text-decoration: none;
+}
+
+a:hover {
+  color: whitesmoke;
 }
 
 .flex-image {
   width: 100%;
   height: auto;
+  border-radius: 12px;
 }
 
 .components {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
 }
 
 .starting-cards {
-  width: 50%;
+  width: 49%;
   height: auto;
 }
 
 .supply-cards {
-  width: 50%;
+  width: 49%;
   height: auto;
 }
 
 .coins {
-  width: 33%;
+  width: 32%;
   height: auto;
 }
 
 .dice {
-  width: 33%;
+  width: 32%;
   height: auto;
 }
 
 .game-rules {
-  width: 33%;
+  width: 32%;
   height: auto;
 }
 
 .card-explanation {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   width: 100%;
 }
 
 .establishments {
-  width: 50%;
-  height: auto;
+  width: 49%;
+  /*height: auto;*/
 }
 
 .landmarks {
-  width: 50%;
-  height: auto;
+  width: 49%;
+  /*height: auto;*/
 }
 
-.game-setup {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
 .city-hall {
   width: 15%
 }
@@ -114,6 +189,55 @@ a {
   width: 85%
 }
 
-.replenish-line {
+.float-images {
   overflow: auto;
+}
+
+.earn-income {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 60%;
+  margin: 15px auto 15px auto;
+}
+.primary-establishments {
+  width: 49%;
+}
+.secondary-industry {
+  width: 49%;
+}
+.restaurants {
+  width: 49%;
+}
+.major-establishments{
+  width: 49%;
+}
+
+.tower {
+  vertical-align: middle;
+  max-height: 30px;
+  border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+  .machi {font-size: 30px;}
+  .bright {font-size: 16px;}
+  .links {font-size: 14px;}
+
+  body {font-size: 16px;}
+  h1 {font-size: 22px;}
+  h2 {font-size: 20px;}
+  h3 {font-size: 18px;}
+
+  .components {flex-direction: column;}
+    .starting-cards {width: 100%;}
+    .supply-cards {width: 100%;}
+    .coins {width: 100%;}
+    .dice {width: 100%;}
+    .game-rules {width: 100%;}
+
+  .card-explanation {flex-direction: column; width: 100%;}
+    .establishments {width: 100%;}
+    .landmarks {width: 100%;}
 }
